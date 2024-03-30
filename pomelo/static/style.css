@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Source+Serif+4:ital,opsz,wght@1,8..60,200..900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    min-height: 100vh;
+    color: #aad644;
+    font-weight: 400;
+}
+
+body::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #aad644; /* Set the color of the scrollbar thumb */
+    border-radius: 50px; /* Set border radius for rounded corners */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the scrollbar track */
+}
+
+.banner {
+    max-width: 225px;
+    height: auto;
+    display: block;
+    padding: 1%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* New styles for the navigation bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.logo-container {
+    width: 100px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle; /* Align the logo vertically */
+}
+
+.nav-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin-right: 1%; /* Margin for the container of links */
+}
+
+.nav-list li {
+    margin-right: 25px; /* Spacing between buttons */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #aad644;
+    font-size: 32px; /* Increased font size */
+    position: relative; /* Position relative for absolute positioning of underline */
+}
+
+.nav-list li a::before {
+    content: "";
+    position: absolute;
+    bottom: -.1em; /* Adjust to fit the underline position */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fa596c;
+    transform-origin: right; /* Set the transform origin to the left */
+    transform: scaleX(0); /* Initially, scale to 0 to hide the underline */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.nav-list li a:hover::before {
+    transform: scaleY(.5); /* Scale to full width on hover */
+    transform-origin: left; /* Change transform origin to right for swiping effect */
+}
+
+/* Content spacers */
+section {
+    padding-top: 100px; /* Adjust the spacing as needed */
+    padding-bottom: 100px; /* Adjust the spacing as needed */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+}
+
+.connect-button {
+    margin: 20px; /* Adjust margin between buttons */
+}
+
+.connect-image {
+    width: 50px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#hero {
+    background-color: #f9f7f71b; /* Choose desired background color */
+    border-radius: 50;
+    color: #f9f4f4f7; /* Text color */
+    padding: 160px 50px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px; /* Limit content width */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+h1 {
+    font-size: 48px; /* Adjust font size */
+    margin-bottom: 20px; /* Add spacing below heading */
+}
+
+p {
+    font-size: 20px; /* Adjust font size */
+}
+
+
+
+
+
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .banner {
+        max-width: auto;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center the banner horizontally */
+        transform: translateX(-50px);
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+    }
+
+    .nav-container {
+        margin-top: 10px;
+    }
+
+    .nav-list li {
+        margin-right: 10px;
+    }
+
+    .nav-list li a {
+        font-size: 1em; /* Adjust font size for mobile view */
+    }
+}
