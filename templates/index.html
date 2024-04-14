@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='phishhook_logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='ocean.css') }}">
+    <title>Phish Hook</title>
+</head>
+<body>
+
+  <div class="container">
+
+      <div class="left-section">
+        <h1>Phish Hook</h1>
+        <br>
+        <p>Your ultimate Webtool-box for detecting phishing content in emails, links, and webpages. 
+          Equiped with AI and database analysis reeling in a safer browsing experience.</p>
+        <br>
+        <p>Dive in and install now on the <br>
+        <a href="https://chromewebstore.google.com/" target="_blank" style="text-decoration: underline;">Chrome Web Store</a>!</p>
+        <br>
+      </div>
+
+      <div class="right-section">
+        <div class="card">
+
+          <div class="textarea-container">
+            <textarea id="input_text" rows="10" spellcheck="false" placeholder="Paste Suspicious Text Here..."
+              onfocus="handleFocus(true)" onblur="handleFocus(false)"></textarea>
+            <div class="statistics">
+              <div id="wordCount" class="quill">0 words</div>
+              <div id="characterCount" class="quill">0 characters</div>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button class="btn" onclick="predictPercentage()">Go Phish!</button>
+            <div id="outputContainer"></div>
+          </div>
+
+        </div>
+      </div>
+      
+  </div>
+
+  <!-- Flask Input Output -->
+  <script src="{{ url_for('static', filename='io.js') }}"></script>
+
+  <!-- Text Area Functions -->
+  <script src="{{ url_for('static', filename='quill.js') }}"></script>
+
+  <!-- Cursor Bubble Trailer -->
+  <div class="circle"></div>
+  <script src="{{ url_for('static', filename='cursor.js') }}"></script>
+  
+</body>
+</html>

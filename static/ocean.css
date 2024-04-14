@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0093E9; background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  color: #fff;
+}
+
+.circle {
+  --circle-size: 20px;
+  position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 2px solid white;
+  border-radius: 100%;
+  top: calc(var(--circle-size) / 2 * -1);
+  left: calc(var(--circle-size) / 2 * -1);
+  pointer-events: none;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Adjust the glow effect as needed */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 10px
+}
+
+.left-section {
+    margin-right: 3%;
+  text-align: left;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.596);
+  border-radius: 8px;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  font-family: "Courier New", monospace;
+  resize: none;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.949);
+  border-radius: 4px;
+}
+
+textarea::placeholder {
+  color: #aaa;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #91cdfa; /* Set the color of the scrollbar thumb */
+    border-radius: 50px; /* Set border radius for rounded corners */
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent; /* Set the background color of the scrollbar track */
+}
+
+.statistics {
+  width: auto;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.quill {
+  color: #000;
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2f2f2f;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+#outputContainer {
+  color: #000;
+  margin-left: 15px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .circle {
+    display: none;
+    /* Hide the circle div on mobile devices */
+  }
+
+  body {
+    overscroll-behavior: none;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .left-section {
+    order: 1;
+    /* Move left section to the top */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    order: 2;
+    /* Move right section to the bottom */
+  }
+
+  .card {
+    width: auto;
+  }
+
+  textarea {
+    width: 300px;
+    height: 150px;
+  }
+}
