@@ -2,7 +2,8 @@
 Your ultimate Webtool-box for detecting phishing content in emails, links, and webpages. Equiped with AI and database analysis reeling in a safer browsing experience.
 
 ## Demo
-Demo it here: [https://ezipor.pythonanywhere.com/](https://ezipor.pythonanywhere.com/)
+Demo it here: <a href="https://ezipor.pythonanywhere.com/" target="_blank">https://ezipor.pythonanywhere.com/</a>
+
 
 ## Overview
 This project involves deploying a Logistic Regression Model (LRM) using Flask in a Chrome Extension.
