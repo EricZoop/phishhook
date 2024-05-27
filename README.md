@@ -6,7 +6,7 @@ Demo it here: <a href="https://ezipor.pythonanywhere.com/" target="_blank">https
 
 
 ## Overview
-This project involves deploying a Logistic Regression Model (LRM) using Flask in a Chrome Extension.
+This repository includes both the demo page and the zipped extension
 
 ## Resources
 - Flask: [Flask Quickstart](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application)
