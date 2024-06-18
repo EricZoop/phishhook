@@ -1,9 +1,9 @@
-# Phish Hook
+# Phish Hook 🎣
 Your ultimate Webtool-box for detecting phishing content in emails, links, and webpages. Equiped with AI and database analysis reeling in a safer browsing experience.
 
-## Demo
-Demo it here: <a href="https://ezipor.pythonanywhere.com/" target="_blank">https://ezipor.pythonanywhere.com/</a>
-
+## Try it
+<a href="https://chromewebstore.google.com/detail/phish-hook/dnccehgmfddepoddigbbnjcjjddkieik" target="_blank">Download on the Chrome Web Store ↗/</a>
+<a href="https://ezipor.pythonanywhere.com/" target="_blank">Live Demo ↗/</a>
 
 ## Overview
 This repository includes both the demo page and the zipped extension
